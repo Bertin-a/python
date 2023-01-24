@@ -6,7 +6,7 @@ def get_choice():
     computer_choice = random.choice(options)
     choices ={"player":player_choice, "computer":computer_choice}
     return choices
-selections=get_choice()
+
 
 
 def check_win(player,computer):
@@ -18,20 +18,20 @@ def check_win(player,computer):
             return "Rock Smashes scissors! you win"
         else:
             return "paper covers rock you lose"
-    elif player=="Paper":
+    elif player=="paper":
         if computer=="scissors":
             return 'scissors cuts paper you lose'
         else:
-            return  "paper covers rock you win"
+            return "paper covers rock you win"
     elif player=="scissor":
         if computer=="paper":
             return 'scissors cuts paper you Win'
         else:
             return  "Rock Smashes scissors, you lose"
     
-        
-check_win("rock","paper")
-  
+choices= get_choice()
+results = check_win(choices["player"],choices["computer"])
+print(results)
 
 
 
