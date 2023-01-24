@@ -21,3 +21,5 @@ stringNumbers = "20"
 numbs = int(stringNumbers)
 
 print(type(numbs))
+
+print(1 or 0)
