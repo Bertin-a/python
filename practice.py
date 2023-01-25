@@ -22,4 +22,6 @@ numbs = int(stringNumbers)
 
 print(type(numbs))
 
-print(1 or 0)
+print(1 or 0) # returns the first oprand that is not a false value
+print(1 and 0) # it evalutes the second argument is the first is true 
+   
